@@ -1,0 +1,29 @@
+.footer {
+    margin-top: 70px;
+}
+.footer .menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    width: 100%;
+    background: #f5a715;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.footer .menu ul li a {
+    color: #000;
+}
+.footer .menu ul li a:hover {
+    color: #32312f;
+}
+@media (max-width: 800px) {
+    .footer .menu ul li a {
+        font-size: 12px;
+    }
+    .footer .menu ul {
+        gap: 50px;
+    }
+}

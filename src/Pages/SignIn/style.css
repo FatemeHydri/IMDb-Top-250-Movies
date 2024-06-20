@@ -1,0 +1,58 @@
+.login-box {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 15px;
+}
+.login-box .login-header h2 {
+    color: #fff;
+    margin: 20px 0;
+}
+.login-box .input-box {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.login-box .input-box .input-field {
+    margin: 10px 0;
+    text-indent: 5px;
+}
+.remember-forgot {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.remember-forgot .remember {
+    color: #fff;
+    font-family: "Roboto";
+}
+.remember-forgot a {
+    color: #fff;
+}
+.login-box .input-box .input-submit {
+    font-family: "Roboto";
+    font-size: 18px;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-left: 115px;
+}
+.login-box .register {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    justify-content: center;
+}
+.login-box .register span {
+    color: #fff;
+    font-size: 15px;
+}
+.login-box .register a {
+    color: #fff;
+    font-size: 15px;
+}
+

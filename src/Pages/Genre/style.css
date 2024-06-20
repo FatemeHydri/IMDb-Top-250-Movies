@@ -1,0 +1,85 @@
+.movie-list .empty h1 {
+    color: #fff;
+    font-size: 30px;
+    font-family: "Roboto";
+}
+.movie-list .empty p {
+    color: #fff;
+    font-size: 20px;
+    font-family: "Roboto";
+    margin-bottom: 100px;
+}
+.listf ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 90px;
+    padding-bottom: 30px;
+}
+.listf ul li {
+    width: 16.66%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+}
+.listf ul li .cover {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.listf ul li .cover .transparent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s;
+    border-radius: 5px;
+}
+.listf ul li .cover:hover .transparent {
+    opacity: 1;
+    visibility: visible;
+}
+.listf ul li .cover .coverBox {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    padding: 10px 5px;
+    font-size: 18px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s;
+    left: 10px;
+}
+.listf ul li .cover:hover .coverBox {
+    opacity: 1;
+    visibility: visible;
+}
+.listf ul li .cover .coverBox h6 {
+    margin: 0;
+}
+.listf ul li .cover .image {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+.listf ul li h5 {
+    color: #fff;
+    text-align: center;
+}
+.custom-pagination .ant-pagination-item a {
+    color: white;
+}
+
+.custom-pagination .ant-pagination-item-active a {
+    color: #1890ff; 
+}
+
+@media (max-width: 1000px) {
+    .listf ul li {
+        width: 33.33%;
+    }
+}

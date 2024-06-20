@@ -1,0 +1,85 @@
+.movie-list {
+    padding: 5px;
+}
+.movie-list .list-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    margin-top: 40px;
+}
+.movie-list .list-header h2 {
+    font-family: "Roboto";
+    font-size: 25px;
+    font-weight: 800;
+}
+.movie-list .empty h1 {
+    color: #fff;
+    font-family: "Roboto";
+    font-size: 25px;
+    text-align: center;
+}
+.movie-list .empty p {
+    color: #fff;
+    font-family: "Roboto";
+    font-size: 25px;
+    text-align: center;
+}
+.movie-list .list-header a {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+    color: #998804;
+}
+.movie-list .list-header:hover a {
+    opacity: 1;
+    visibility: visible;
+}
+.movie-list .list ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.movie-list .list ul li {
+    padding: 0 10px;
+}
+.movie-list .list ul li .cover { 
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.movie-list .list ul li .cover .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s;
+    border-radius: 5px;
+}
+.movie-list .list ul li .cover:hover .overlay {
+    opacity: 1;
+    visibility: visible;
+}
+.movie-list .list ul li .cover img {
+    width: 150px;
+    display: block;
+    height: 200px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.movie-list .list ul li h5 {
+    min-height: 40px;
+    color: #fff;
+    width: 150px;
+}
+
+@media (max-width: 1000px) {
+    .movie-list .list ul li {
+        width: 33.33%;
+        padding: 0 50px;
+    }
+}

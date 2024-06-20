@@ -1,0 +1,51 @@
+.header .header-container {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}    
+.header .header-container .left{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.header .header-container .right{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.header .header-container .right h5 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+}
+.header .header-container .right h5:hover {
+    color: #998804;
+}
+.header .menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.header .menu ul li a {
+    color: #fff;
+    font-size: 20px;
+}
+.header .menu ul li a:hover {
+    color: #998804;
+}
+input {
+    font-family: "Roboto";
+    outline: none;
+    border: none;
+    padding-right: 150px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+
+@media (max-width: 700px) {
+    .header .menu ul li a {
+        font-size: 14px;
+    }
+}
